@@ -9,8 +9,7 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "start": "nodemon index.js",
-    "postinstall": "npm start"
+    "start": "nodemon index.js"
   },
   "private": true,
   "dependencies": {
