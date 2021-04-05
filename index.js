@@ -8,6 +8,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json())
+app.get("/",(req,res)=>{
+  res.sendFile('www/index.html',{root: __dirname })
+
+})
 app.use("/api",routes);
 app.listen(process.env.PORT || 3000, () => {
   console.log("connected");
